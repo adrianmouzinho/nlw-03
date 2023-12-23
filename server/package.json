@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate": "drizzle-kit generate:pg",
+    "dev": "bun run --watch src/http/server.ts",
+    "migrate": "bun src/db/migrate.ts"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "drizzle-orm": "^0.29.1",
+    "elysia": "latest",
+    "postgres": "^3.4.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.20.7",
+    "pg": "^8.11.3"
+  }
+}

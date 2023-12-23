@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* input:valid, textarea:valid {
+  background-color: #F5F8FA;
+  border-color: #A1E9C5;
+} */
+
+#orphanages-map .map-popup .leaflet-popup-content-wrapper {
+  @apply bg-white/80 shadow-[16px_28px_40px_rgba(23,142,166,0.16)] rounded-[20px];
+}
+
+#orphanages-map .map-popup .leaflet-popup-content {
+  @apply text-[#0089A5] text-xl font-bold my-2 mx-3 flex items-center justify-between;
+}
+
+#orphanages-map .map-popup .leaflet-popup-content a {
+  @apply w-10 h-10 bg-[#15C3D6] shadow-[16px_28px_40px_rgba(23,142,166,0.16)] rounded-xl flex items-center justify-center;
+}
+
+#orphanages-map .map-popup .leaflet-popup-tip-container {
+  @apply top-1/2 left-0;
+}
+
+#orphanages-map .map-popup .leaflet-popup-tip {
+  @apply hidden;
+}
